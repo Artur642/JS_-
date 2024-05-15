@@ -45,17 +45,62 @@
 // else{
 //     alert("Дію відмінено")
 // }
-result= 5 + 5 + '5';
-console.log(result)
+// result= 5 + 5 + '5';
+// console.log(result)
 
-emeil = 'freshshow9999@gmail.com';
-console.log(emeil.includes('freshshow9999@gmail.com'))
-console.log(emeil.includes('@'))
+// emeil = 'freshshow9999@gmail.com';
+// console.log(emeil.includes('freshshow9999@gmail.com'))
+// console.log(emeil.length('@'))
 
-const fullName = 'My' + ' ' + 'name' + ' ' + 'is' + ' ' + 'Viktor' ;
-console.log(fullName)
+// const My = 'My';
+// const name = 'name';
+// const is = 'is';
+// const fullName = My + ' ' + name + ' ' + is + ' ' + 'Viktor' ;
+// console.log(fullName)
 
-const userName = "Олександро";
-const payment = 300;
-const message = `Дякуємо, ${userName}! До сплати ${payment} гривень`;
-alert(message);
+// let userName = "Олександро";
+// let payment = 300;
+// alert = `Дякуємо, ${userName}! До сплати ${payment} гривень`;
+
+// function checkFields(){
+//     const fieldValue1 = document.getElementById("text-one").value;
+//     const fieldValue2 = document.getElementById("text-two").value;
+
+//     if (fieldValue1 !== '' && fieldValue2 !== ''){
+//         alert("Обидва поля заповнені");
+//     } else {
+//         alert("Не всі поля заповнені");
+//     }
+// }
+
+// function checkSum() {
+//     const numberValue1 = parseFloat(document.getElementById("number-one").value);
+//     const numberValue2 = parseFloat(document.getElementById("number-two").value);
+
+//     if (numberValue1 + numberValue2 > 10) {
+//         alert("Сума більша за 10");
+//     } else {
+//         alert("Сума менша або дорівнює 10")
+//     }
+// }
+
+// function checkText() {
+//     const inputValue = document.getElementById("textField").value;
+
+//     if (inputValue.includes("JavaScript")){
+//         alert("Текст містить слово JavaScript")
+//     } else {
+//         alert("Текст не містить слово JavaScript")
+//     }
+        
+// }
+
+function checkNumder() {
+    const numberInput = parseFloat(document.getElementById("numberInput").value);
+
+    if(!isNaN(numberInput) && numberInput > 10 && numberInput < 20) {
+        alert( "Число входить в діапазон від 10 до 20")
+    } else {
+        alert("Число не входить в діапазон від 10 до 20")
+    }
+}
