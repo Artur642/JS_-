@@ -147,99 +147,150 @@
 
 
 // 1
-function showChoise() {
-    const select = document.getElementById("drinks");
-    const selected = select.options[select.selectedIndex].value;
+// function showChoise() {
+//     const select = document.getElementById("drinks");
+//     const selected = select.options[select.selectedIndex].value;
 
-    if (selected === "coffee") {
-        alert("Ви вибрали каву")
-    } else if (selected === "tea") {
-        alert("Ви вибрали чай");
-    } else if (selected === "juice") {
-        alert("Ви вибрали сік");
-    }
-}
+//     if (selected === "coffee") {
+//         alert("Ви вибрали каву")
+//     } else if (selected === "tea") {
+//         alert("Ви вибрали чай");
+//     } else if (selected === "juice") {
+//         alert("Ви вибрали сік");
+//     }
+// }
 
 // 2
 
-function checkDay() {
-    const inputDay = document.getElementById("inputDay").value;
+// function checkDay() {
+//     const inputDay = document.getElementById("inputDay").value;
 
-    if (
-        inputDay === "понеділок" ||
-        inputDay === "вівторок" ||
-        inputDay === "середа" ||
-        inputDay === "четаверт" ||
-        inputDay === "п'ятниця" 
-    ) {
-        alert("Зараз будні дні")
-    } else if (inputDay === "субота" || inputDay === "неділя") {
-        alert("Зараз вихідні")
-    } else {
-        alert("You have problem")
-    }
-}
+//     if (
+//         inputDay === "понеділок" ||
+//         inputDay === "вівторок" ||
+//         inputDay === "середа" ||
+//         inputDay === "четаверт" ||
+//         inputDay === "п'ятниця" 
+//     ) {
+//         alert("Зараз будні дні")
+//     } else if (inputDay === "субота" || inputDay === "неділя") {
+//         alert("Зараз вихідні")
+//     } else {
+//         alert("You have problem")
+//     }
+// }
 
 // 3
 
-function checkMonth() {
-    const inputMonth = document.getElementById("inputMonth").value;
+// function checkMonth() {
+//     const inputMonth = document.getElementById("inputMonth").value;
 
-    if (inputMonth == 1 || inputMonth == 2 || inputMonth == 12) {
-        alert("It`s winter!")
-    } else if (inputMonth == 3 || inputMonth == 4 || inputMonth == 5){
-        alert("It`s spring!");
-    } else if (inputMonth == 6 || inputMonth == 7 || inputMonth == 8){
-        alert("It`s summer!");
-    } else if (inputMonth == 9 || inputMonth == 10 || inputMonth == 11){
-        alert("It`s autumn!")
-    } else {
-        alert("You have problem")
-    }
+//     if (inputMonth == 1 || inputMonth == 2 || inputMonth == 12) {
+//         alert("It`s winter!")
+//     } else if (inputMonth == 3 || inputMonth == 4 || inputMonth == 5){
+//         alert("It`s spring!");
+//     } else if (inputMonth == 6 || inputMonth == 7 || inputMonth == 8){
+//         alert("It`s summer!");
+//     } else if (inputMonth == 9 || inputMonth == 10 || inputMonth == 11){
+//         alert("It`s autumn!")
+//     } else {
+//         alert("You have problem")
+//     }
         
-}
+// }
 
 // 4
 
-function inputMonthDay() {
-    const inputMonthDay = document.getElementById("inputMonthDay").value;
+// function inputMonthDay() {
+//     const inputMonthDay = document.getElementById("inputMonthDay").value;
 
-    if (
-        inputMonthDay == 1 ||
-        inputMonthDay == 3 ||
-        inputMonthDay == 5 ||
-        inputMonthDay == 7 ||
-        inputMonthDay == 8 ||
-        inputMonthDay == 10 ||
-        inputMonthDay == 12
-    ) {
-        alert("In this month 31 days");
-    } else if (
-        inputMonthDay == 4 ||
-        inputMonthDay == 6 ||
-        inputMonthDay == 9 ||
-        inputMonthDay == 11
-    ) {
-        alert("In this month 30 days");
-    } else if (inputMonthDay == 2) {
-        alert("In this month 28 or 29 days")
-    } else {
-        alert("You have problem")
-    }
-}
+//     if (
+//         inputMonthDay == 1 ||
+//         inputMonthDay == 3 ||
+//         inputMonthDay == 5 ||
+//         inputMonthDay == 7 ||
+//         inputMonthDay == 8 ||
+//         inputMonthDay == 10 ||
+//         inputMonthDay == 12
+//     ) {
+//         alert("In this month 31 days");
+//     } else if (
+//         inputMonthDay == 4 ||
+//         inputMonthDay == 6 ||
+//         inputMonthDay == 9 ||
+//         inputMonthDay == 11
+//     ) {
+//         alert("In this month 30 days");
+//     } else if (inputMonthDay == 2) {
+//         alert("In this month 28 or 29 days")
+//     } else {
+//         alert("You have problem")
+//     }
+// }
 
 // 5
 
-function checkColor() {
-    const inputColor = document.getElementById("inputColor").value;
+// function checkColor() {
+//     const inputColor = document.getElementById("inputColor").value;
 
-    if (inputColor === "червоний"){
-        alert("стоп");
-    } else if (inputColor === "жовтий") {
-        alert("чекати");
-    } else if (inputColor === "зелений") {
-        alert("йти");
-    } else {
-        alert("You have problem")
+//     if (inputColor === "червоний"){
+//         alert("стоп");
+//     } else if (inputColor === "жовтий") {
+//         alert("чекати");
+//     } else if (inputColor === "зелений") {
+//         alert("йти");
+//     } else {
+//         alert("You have problem")
+//     }
+// }
+
+//1
+const arr = [1, 2, 3];
+arr[1] = 10;
+console.tabele(arr);
+
+//2
+const arrTwo = ['first', 'second', 'three'];
+arrTwo[3] = 'four';
+console.table(arrTwo);
+
+//3
+const arrSum = [4, 10, 5, 6];
+let sum = 0;
+for (let i = 0; i < arrSum.length; i++){
+    sum += arrSum[i]
+}
+console.log(sum);
+
+//4
+const arr4 = [1, 8, 7, 3, 5];
+for (let i = 0; i < arr4.length; i++){
+    console.log(arr4[i]);
+}
+
+//5
+const string = ['hello', 'javascript', 'GoITeens', 'hi', 'monday']
+for (let i = 0; i < string.length; i++){
+    if (string[i].length < 5) {
+        continue;
+    }
+    console.log(string[i]);
+}
+
+//6
+const arr6 = [20, 8, 25, 28, 60, 77, 500, 58, 120, 22];
+let max = arr[0];
+for (let i = 0; i < arr6.length; i++){
+    if (arr6[i] > max) {
+        max = arr6[i]
+    }
+}
+console.log(max);
+
+//7
+const arr7 = [20, 8, 25, 28, 60, 77, 500, 58, 120, 22];
+for (let i = 0; i < arr7.length; i++){
+    if (arr7[i] % 2 === 0) {
+        console.log(arr7[i]);
     }
 }
