@@ -92,7 +92,7 @@
 //     } else {
 //         alert("Текст не містить слово JavaScript")
 //     }
-        
+
 // }
 
 // function checkNumder() {
@@ -196,7 +196,7 @@
 //     } else {
 //         alert("You have problem")
 //     }
-        
+
 // }
 
 // 4
@@ -245,52 +245,119 @@
 // }
 
 //1
-const arr = [1, 2, 3];
-arr[1] = 10;
-console.tabele(arr);
+// const arr = [1, 2, 3];
+// arr[1] = 10;
+// console.tabele(arr);
 
 //2
-const arrTwo = ['first', 'second', 'three'];
-arrTwo[3] = 'four';
-console.table(arrTwo);
+// const arrTwo = ['first', 'second', 'three'];
+// arrTwo[3] = 'four';
+// console.table(arrTwo);
 
 //3
-const arrSum = [4, 10, 5, 6];
-let sum = 0;
-for (let i = 0; i < arrSum.length; i++){
-    sum += arrSum[i]
-}
-console.log(sum);
+// const arrSum = [4, 10, 5, 6];
+// let sum = 0;
+// for (let i = 0; i < arrSum.length; i++){
+//     sum += arrSum[i]
+// }
+// console.log(sum);
 
 //4
-const arr4 = [1, 8, 7, 3, 5];
-for (let i = 0; i < arr4.length; i++){
-    console.log(arr4[i]);
-}
+// const arr4 = [1, 8, 7, 3, 5];
+// for (let i = 0; i < arr4.length; i++){
+//     console.log(arr4[i]);
+// }
 
 //5
-const string = ['hello', 'javascript', 'GoITeens', 'hi', 'monday']
-for (let i = 0; i < string.length; i++){
-    if (string[i].length < 5) {
-        continue;
-    }
-    console.log(string[i]);
-}
+// const string = ['hello', 'javascript', 'GoITeens', 'hi', 'monday']
+// for (let i = 0; i < string.length; i++){
+//     if (string[i].length < 5) {
+//         continue;
+//     }
+//     console.log(string[i]);
+// }
 
 //6
-const arr6 = [20, 8, 25, 28, 60, 77, 500, 58, 120, 22];
-let max = arr[0];
-for (let i = 0; i < arr6.length; i++){
-    if (arr6[i] > max) {
-        max = arr6[i]
-    }
-}
-console.log(max);
+// const arr6 = [20, 8, 25, 28, 60, 77, 500, 58, 120, 22];
+// let max = arr[0];
+// for (let i = 0; i < arr6.length; i++){
+//     if (arr6[i] > max) {
+//         max = arr6[i]
+//     }
+// }
+// console.log(max);
 
 //7
-const arr7 = [20, 8, 25, 28, 60, 77, 500, 58, 120, 22];
-for (let i = 0; i < arr7.length; i++){
-    if (arr7[i] % 2 === 0) {
-        console.log(arr7[i]);
-    }
+// const arr7 = [20, 8, 25, 28, 60, 77, 500, 58, 120, 22];
+// for (let i = 0; i < arr7.length; i++){
+//     if (arr7[i] % 2 === 0) {
+//         console.log(arr7[i]);
+//     }
+// }
+
+//1
+// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+// let string = friends.join(',');
+// console.log(string)
+
+// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+// let string = '';
+
+// for (let i = 0; i < friends.length; i++) {
+//     string += friends[i];
+//     if (i !== friends.length - 1) {
+//         string += ',';
+//     }
+// }
+// console.log(string);
+
+//2
+// const cards = [
+//     'Карточка-1',
+//     'Карточка-2',
+//     'Карточка-3',
+//     'Карточка-4',
+//     'Карточка-5',
+//   ];
+//   let string = cards.join(',');
+//   console.log(string);
+
+//3
+//   const cards = [
+//     'Карточка-1',
+//     'Карточка-2',
+//     'Карточка-3',
+//     'Карточка-4',
+//     'Карточка-5',
+//   ];
+//   const indexToRemove = 2;
+//   cards.splice(cardToRemove, 1);
+//   console.log(cards);
+
+//4
+// const cards = [
+//     'Карточка-1',
+//     'Карточка-2',
+//     'Карточка-3',
+//     'Карточка-4',
+//     'Карточка-5',
+//   ];
+//   const cardToInsert = 5;
+//   cards.splice(cardToInsert, 0, 'Карточка-6');
+//   console.log(cards)
+
+//5
+const cards = [
+    'Карточка-1',
+    'Карточка-2',
+    'Карточка-3',
+    'Карточка-4',
+    'Карточка-5',
+];
+const cardToUpdate = 'Карточка-4';
+const newCard = 'Оновлена Карточка-4';
+const indexToUpdate = cards.indexOf(cardToUpdate);
+if (indexToUpdate !== -1) {
+    cards.splice(indexToUpdate, 1, newCard);
 }
+console.log(cards);
