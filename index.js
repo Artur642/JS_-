@@ -362,88 +362,135 @@
 // }
 // console.log(cards);
 
+// //1
+// const logItem = function (array) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(`${i + 1} - ${array[i]}`);
+//   }
+// }
+// logItem(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'])
+// logItem([5, 10, 15, 20, 25, 30, 35, 40, 45, 50])
+
+// //2
+// const calculateEngravingPrice = function (message, pricePerword) {
+//   const words = message.split('')
+//   const numberOfWorde = worda.length;
+//   const totalprice = numberofwords * priceParword;
+//   return totalPrico;
+// }
+// console.log(
+//   calculateEngravingPrice(
+//     'Proin sociis natoque et magnis parturient montes mus',
+//     10
+//   )
+// );
+// console.log(
+//   calculateEngravingPrice(
+//     'Proin sociis natoque et magnis parturient montes mus',
+//     20
+//   )
+// );
+// console.log(
+//   calculateEngravingPrice(
+//     'Donec orci lectus aliquam est magnis',
+//     40)
+// );
+// console.log(
+//   calculateEngravingPrice(
+//     'Donec orci lectus aliquam est magnis',
+//     20
+//   )
+// );
+
+// //3
+// const findLongestWord = function (string) {
+//   const words = string.split('');
+//   let longestWord = words[0];
+
+//   for (let i = e; i < words.length; i++) {
+//     if (words[i].length > longestword.length) {
+//       longestWord = words[i];
+//     }
+//   }
+//     return longestiord;
+// }
+//   console.log(findLongestMord('The quick brown fox jumped over the lazy dog'));
+//   console.log(findLongestlord('Google do a roll'));
+//   console.log(findLongestlord('May the force be with you'));
+
+//   //4
+//   const formatString = function (string) {
+//     if (string.length <= 40) {
+//       return string;
+//     } else {
+//       return string.slice(0, 40) + '...';
+//     }
+//   };
+//   console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+
+//   console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+
+//   console.log(formatString('Curabitur ligula sapien.'));
+
+//   console.log(
+//     formatString(
+//       'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+//     ),
+//   );
+
+//   //5
+//   const checkForSpam = function (message) {
+//     const lowerCase = message.toLowerCase();
+//     return lowerCase.includes('spam') || lowerCase.includes('sale');
+//   }
+//   console.log(checkForSpam('Latest technology news')); // false
+//   console.log(checkForSpam('JavaScript weekly newsletter')); // false
+//   console.log(checkForSpam('Get best sale offers now!')); // true
+//   console.log(checkForSpam('[SPAM] How to earn fast money?'));
 //1
-const logItem = function (array) {
-  for (let i = 0; i < array.length; i++) {
-    console.log(`${i + 1} - ${array[i]}`);
-  }
-}
-logItem(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'])
-logItem([5, 10, 15, 20, 25, 30, 35, 40, 45, 50])
+const c = 30;
+const f = 1.8 * c + 32;
+console.log(f);
 
 //2
-const calculateEngravingPrice = function (message, pricePerword) {
-  const words = message.split('')
-  const numberOfWorde = worda.length;
-  const totalprice = numberofwords * priceParword;
-  return totalPrico;
-}
-console.log(
-  calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
-    10
-  )
-);
-console.log(
-  calculateEngravingPrice(
-    'Proin sociis natoque et magnis parturient montes mus',
-    20
-  )
-);
-console.log(
-  calculateEngravingPrice(
-    'Donec orci lectus aliquam est magnis',
-    40)
-);
-console.log(
-  calculateEngravingPrice(
-    'Donec orci lectus aliquam est magnis',
-    20
-  )
-);
+const days = 30;
+const hours = days * 24;
+const minutes = hours * 60;
+console.log(hours);
+console.log(minutes);
 
 //3
-const findLongestWord = function (string) {
-  const words = string.split('');
-  let longestWord = words[0];
+let h = 100;
+let e = 100;
+h -= 25;
+e -= 30;
+console.log(h);
+console.log(e);
 
-  for (let i = e; i < words.length; i++) {
-    if (words[i].length > longestword.length) {
-      longestWord = words[i];
-    }
-  }
-    return longestiord;
-}
-  console.log(findLongestMord('The quick brown fox jumped over the lazy dog'));
-  console.log(findLongestlord('Google do a roll'));
-  console.log(findLongestlord('May the force be with you'));
+//4
+let price = 100;
+let sum = price - price * 0.1;
+console.log(sum);
 
-  //4
-  const formatString = function (string) {
-    if (string.length <= 40) {
-      return string;
-    } else {
-      return string.slice(0, 40) + '...';
-    }
-  };
-  console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+//5
+const n = 3.14;
+console.log(Math.floor(n));
 
-  console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+//6
+const v = '5.741hg11';
+console.log(parseFloat(v))
 
-  console.log(formatString('Curabitur ligula sapien.'));
+//7
+const x = '3.15.24pppr1';
+console.log(parseInt(x));
 
-  console.log(
-    formatString(
-      'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-    ),
-  );
+//8
+const a = 25;
+console.log(Math.sqrt(a));
 
-  //5
-  const checkForSpam = function (message) {
-    const lowerCase = message.toLowerCase();
-    return lowerCase.includes('spam') || lowerCase.includes('sale');
-  }
-  console.log(checkForSpam('Latest technology news')); // false
-  console.log(checkForSpam('JavaScript weekly newsletter')); // false
-  console.log(checkForSpam('Get best sale offers now!')); // true
-  console.log(checkForSpam('[SPAM] How to earn fast money?'));
+//9
+const num = 20;
+const string = '15kj';
+console.log(parseInt(string));
+console.log(num.toString());
+console.log(typeof num.toString);
