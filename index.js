@@ -447,50 +447,73 @@
 //   console.log(checkForSpam('JavaScript weekly newsletter')); // false
 //   console.log(checkForSpam('Get best sale offers now!')); // true
 //   console.log(checkForSpam('[SPAM] How to earn fast money?'));
-//1
-const c = 30;
-const f = 1.8 * c + 32;
-console.log(f);
+// //1
+// const c = 30;
+// const f = 1.8 * c + 32;
+// console.log(f);
 
-//2
-const days = 30;
-const hours = days * 24;
-const minutes = hours * 60;
-console.log(hours);
-console.log(minutes);
+// //2
+// const days = 30;
+// const hours = days * 24;
+// const minutes = hours * 60;
+// console.log(hours);
+// console.log(minutes);
 
-//3
-let h = 100;
-let e = 100;
-h -= 25;
-e -= 30;
-console.log(h);
-console.log(e);
+// //3
+// let h = 100;
+// let e = 100;
+// h -= 25;
+// e -= 30;
+// console.log(h);
+// console.log(e);
+
+// //4
+// let price = 100;
+// let sum = price - price * 0.1;
+// console.log(sum);
+
+// //5
+// const n = 3.14;
+// console.log(Math.floor(n));
+
+// //6
+// const v = '5.741hg11';
+// console.log(parseFloat(v))
+
+// //7
+// const x = '3.15.24pppr1';
+// console.log(parseInt(x));
+
+// //8
+// const a = 25;
+// console.log(Math.sqrt(a));
+
+// //9
+// const num = 20;
+// const string = '15kj';
+// console.log(parseInt(string));
+// console.log(num.toString());
+// console.log(typeof num.toString);
 
 //4
-let price = 100;
-let sum = price - price * 0.1;
-console.log(sum);
+const applyCallbackToEachElement = (arr, callback) => {
+    return arr.map(callback);
+}
+
+const arr = [1, 2, 3, 4, 5];
+const squareCallback = (num) => num * num;
+
+const result = applyCallbackToEachElement(arr, squareCallback);
+console.log(result);
 
 //5
-const n = 3.14;
-console.log(Math.floor(n));
+const calculateDiscountedPrice = (price, discount, callback) => {
+    const discountedPrice = price - (price * discount / 100);
+    callback(discountedPrice);
+}
 
-//6
-const v = '5.741hg11';
-console.log(parseFloat(v))
+const showDiscountedPrice = (discountedPrice) => {
+    console.log(`Discounted price: ${discountedPrice}`);
+}
 
-//7
-const x = '3.15.24pppr1';
-console.log(parseInt(x));
-
-//8
-const a = 25;
-console.log(Math.sqrt(a));
-
-//9
-const num = 20;
-const string = '15kj';
-console.log(parseInt(string));
-console.log(num.toString());
-console.log(typeof num.toString);
+calculateDiscountedPrice(100, 10, showDiscountedPrice);
