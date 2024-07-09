@@ -495,25 +495,101 @@
 // console.log(num.toString());
 // console.log(typeof num.toString);
 
+// //4
+// const applyCallbackToEachElement = (arr, callback) => {
+//     return arr.map(callback);
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// const squareCallback = (num) => num * num;
+
+// const result = applyCallbackToEachElement(arr, squareCallback);
+// console.log(result);
+
+// //5
+// const calculateDiscountedPrice = (price, discount, callback) => {
+//     const discountedPrice = price - (price * discount / 100);
+//     callback(discountedPrice);
+// }
+
+// const showDiscountedPrice = (discountedPrice) => {
+//     console.log(`Discounted price: ${discountedPrice}`);
+// }
+
+// calculateDiscountedPrice(100, 10, showDiscountedPrice);
+
+
+//1
+const bankAccount = {
+    ownerName: 'Artur',
+    accountNumber: 0,
+    balance: 5000,
+    deposit(amount) {
+        this.balance += amount;
+        updateBalance();
+        alert('Потояний баланс' + this.balance);
+    },
+    withdraw(amount) {
+        if (amount > this.balance) {
+            alert('Мало коштів');
+            return;
+        } else {
+            this.balance -= amount;
+            updateBalance();
+            alert('Поточний баланс:' + this.balance);
+        }
+    },
+    displayInfo() {
+        document.getElementById('balance').innerText = `${this.balance} грн.`;
+    }
+};
+bankAccount.displayInfo();
+function updateBalance() {
+    document.getElementById('balance').textContent = bankAccount.balance;
+};
+function deposit() {
+    let amount = prompt("Вкажіть суму:");
+    if (amount > 0 && !isNaN(amount)) {
+        bankAccount.deposit(parseFloat(amount));
+    } else {
+        alert('Невірні дані');
+    }
+};
+function withdraw() {
+    let amount = prompt("Вкажіть суму:");
+    if (amount > 0 && !isNaN(amount)) {
+        bankAccount.deposit(parseFloat(amount));
+    } else {
+        alert('Невірні дані');
+    }
+};
+
+
 //4
-const applyCallbackToEachElement = (arr, callback) => {
-    return arr.map(callback);
-}
-
-const arr = [1, 2, 3, 4, 5];
-const squareCallback = (num) => num * num;
-
-const result = applyCallbackToEachElement(arr, squareCallback);
-console.log(result);
-
-//5
-const calculateDiscountedPrice = (price, discount, callback) => {
-    const discountedPrice = price - (price * discount / 100);
-    callback(discountedPrice);
-}
-
-const showDiscountedPrice = (discountedPrice) => {
-    console.log(`Discounted price: ${discountedPrice}`);
-}
-
-calculateDiscountedPrice(100, 10, showDiscountedPrice);
+const movie = {
+    title: 'Hello',
+    director: 'Tom',
+    year: 1999,
+    rating: 9,
+    displayInfo() {
+        document.getElementById('title').innerText = `Tirle: ${this.title}`;
+        document.getElementById('director').innerText = `Director: ${this.title}`;
+        document.getElementById('year').innerText = `Year: ${this.title}`;
+        document.getElementById('rating').innerText = `Rating: ${this.title}`;
+    },
+};
+function updateRating() {
+    const ratingNew = parseFloat(document.getElementById('change').value);
+    if (ratingNew > 8 && !isNaN(ratingNew)) {
+        movie.rating = ratingNew;
+        movie.displayInfo();
+        const title = document.getElementById('title');
+        title.style.color = 'green';
+    } else if (isNaN(ratingNew)) {
+        alert('ВВедіть число');
+    } else {
+        movie.rating = ratingNew;
+        movie.displayInfo();
+    }
+};
+movie.displayInfo();
