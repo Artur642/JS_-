@@ -753,123 +753,207 @@
  * Типів транзацкій всього два.
  * Можна покласти або зняти гроші з рахунку.
  */
-const Transaction = {
-  DEPOSIT: 'deposit',
-  WITHDRAW: 'withdraw',
-};
+// const Transaction = {
+//   DEPOSIT: 'deposit',
+//   WITHDRAW: 'withdraw',
+// };
 
-/*
- * Кожна транзакція - це об'єкт з властивостями: id, type і amount
- */
+// /*
+//  * Кожна транзакція - це об'єкт з властивостями: id, type і amount
+//  */
 
-const account = {
-  // Поточний баланс рахунку
-  balance: 0,
+// const account = {
+//   // Поточний баланс рахунку
+//   balance: 0,
 
-  // Історія транзакцій
-  transactions: [],
+//   // Історія транзакцій
+//   transactions: [],
 
-  /*
-   * Метод створює і повертає об'єкт транзакції.
-   * Приймає суму і тип транзакції.
-   */
-  createTransaction(amount, type) {
-    return {
-      id: this.transactions.length + 1,
-      type,
-      amount,
-    }
-  },
+//   /*
+//    * Метод створює і повертає об'єкт транзакції.
+//    * Приймає суму і тип транзакції.
+//    */
+//   createTransaction(amount, type) {
+//     return {
+//       id: this.transactions.length + 1,
+//       type,
+//       amount,
+//     }
+//   },
 
-  /*
-   * Метод відповідає за додавання суми до балансу.
-   * Приймає суму танзакції.
-   * Викликає createTransaction для створення об'єкта транзакції
-   * після чого додає його в історію транзакцій
-   */
-  deposit(amount) {
-    const transactions = this.createTransaction(amount, Transaction.DEPOSIT);
-    this.transactions.push(transactions);
-    this.balance += amount;
-  },
+//   /*
+//    * Метод відповідає за додавання суми до балансу.
+//    * Приймає суму танзакції.
+//    * Викликає createTransaction для створення об'єкта транзакції
+//    * після чого додає його в історію транзакцій
+//    */
+//   deposit(amount) {
+//     const transactions = this.createTransaction(amount, Transaction.DEPOSIT);
+//     this.transactions.push(transactions);
+//     this.balance += amount;
+//   },
 
-  /*
-   * Метод відповідає за зняття суми з балансу.
-   * Приймає суму танзакції.
-   * Викликає createTransaction для створення об'єкта транзакції
-   * після чого додає його в історію транзакцій.
-   *
-   * Якщо amount більше, ніж поточний баланс, виводь повідомлення
-   * про те, що зняття такої суми не можливо, недостатньо коштів.
-   */
-  withdraw(amount) { 
-    if(amount > this.balance) {
-      console.log("Зняття такої суми неможливе, недостатньо коштів");
-      return;
-    }
-    const transactions = this.createTransaction(amount, Transaction.WITHDRAW);
-    this.transactions.push(transactions);
-    this.balance -= amount;
-  },
+//   /*
+//    * Метод відповідає за зняття суми з балансу.
+//    * Приймає суму танзакції.
+//    * Викликає createTransaction для створення об'єкта транзакції
+//    * після чого додає його в історію транзакцій.
+//    *
+//    * Якщо amount більше, ніж поточний баланс, виводь повідомлення
+//    * про те, що зняття такої суми не можливо, недостатньо коштів.
+//    */
+//   withdraw(amount) { 
+//     if(amount > this.balance) {
+//       console.log("Зняття такої суми неможливе, недостатньо коштів");
+//       return;
+//     }
+//     const transactions = this.createTransaction(amount, Transaction.WITHDRAW);
+//     this.transactions.push(transactions);
+//     this.balance -= amount;
+//   },
 
-  /*
-   * Метод повертає поточний баланс
-   */
-  getBalance() { 
-    return this.balance;
-  },
+//   /*
+//    * Метод повертає поточний баланс
+//    */
+//   getBalance() { 
+//     return this.balance;
+//   },
 
-  /*
-   * Метод шукає і повертає об'єкт транзакції по id
-   */
-  getTransactionDetails(id) { 
-    return this.transactions.find(transaction => transaction.id === id)
-  },
+//   /*
+//    * Метод шукає і повертає об'єкт транзакції по id
+//    */
+//   getTransactionDetails(id) { 
+//     return this.transactions.find(transaction => transaction.id === id)
+//   },
 
-  /*
-   * Метод повертає кількість коштів
-   * певного типу транзакції з усієї історії транзакцій
-   */
-  getTransactionTotal(type) { 
-    return this.transactions
-      .filter(transaction => transaction.type === type)
-      .reduce((total, transaction) => total + transaction.amount, 0);
-  },
-};
-account.deposit(100);
-account.withdraw(50);
-account.deposit(200);
-console.log(account.getBalance());
+//   /*
+//    * Метод повертає кількість коштів
+//    * певного типу транзакції з усієї історії транзакцій
+//    */
+//   getTransactionTotal(type) { 
+//     return this.transactions
+//       .filter(transaction => transaction.type === type)
+//       .reduce((total, transaction) => total + transaction.amount, 0);
+//   },
+// };
+// account.deposit(100);
+// account.withdraw(50);
+// account.deposit(200);
+// console.log(account.getBalance());
 
 
-//1
-const user = {
-  name: 'Mango',
-  age: 20,
-  hobby: 'html',
-  premium: true,
-};
+// //1
+// const user = {
+//   name: 'Mango',
+//   age: 20,
+//   hobby: 'html',
+//   premium: true,
+// };
 
-const { name, age, hobby, premium } = user;
+// const { name, age, hobby, premium } = user;
 
-console.log(name);
-console.log(age);
-console.log(hobby);
-console.log(premium);
+// console.log(name);
+// console.log(age);
+// console.log(hobby);
+// console.log(premium);
 
-//5
-const products = [
-  { name: 'Радар', price: 1300, quantity: 4 },
-  { name: 'Сканер', price: 2700, quantity: 3 },
-  { name: 'Дроїд', price: 400, quantity: 7 },
-  { name: 'Захоплення', price: 1200, quantity: 2 },
+// //5
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроїд', price: 400, quantity: 7 },
+//   { name: 'Захоплення', price: 1200, quantity: 2 },
+// ];
+
+//   const [product1, product2, product3] = products;
+//   const {name:name1, price:price1, quantity:quantity1} = product1;
+//   const {name:name2, price:price2, quantity:quantity2} = product2;
+//   const {name:name3, price:price3, quantity:quantity3} = product3;
+
+//   console.log(name1, price1, quantity1)
+//   console.log(name2, price2, quantity2)
+//   console.log(name3, price3, quantity3)
+
+// 1
+// const users = [
+//   { name: "Artem", age: 14 },
+//   { name: "Artur", age: 14 },
+//   { name: "Maks", age: 15 }
+// ];
+// const names = users.map(user => user.name);
+// console.log(names);
+
+// 2
+// const users = [
+//   { name: "Ivan", age: 15, eyeColor: "blue" },
+//   { name: "Artem", age: 14, eyeColor: "green" },
+//   { name: "Denis", age: 15, eyeColor: "brown" },
+//   { name: "Maks", age: 15, eyeColor: "blue" },
+//   { name: "Artur", age: 14, eyeColor: "green" }
+// ];
+// const EyeColor = "blue";
+// const usersEyeColor = users.filter(user => user.eyeColor === EyeColor);
+
+// console.log(usersEyeColor);
+
+// 3
+// const users = [
+//   { name: "Ivan", age: 15, gender: "false" },
+//   { name: "Artem", age: 14, gender: "true" },
+//   { name: "Denis", age: 15, gender: "false" },
+//   { name: "Maks", age: 15, gender: "true" },
+//   { name: "Artur", age: 14, gender: "false" }
+// ];
+
+// const Gender = "true";
+
+// const namesGender = users
+//   .filter(user => user.gender === Gender)
+//   .map(user => user.name);
+
+// console.log(namesGender);
+
+// 4
+// const users = [
+//   { name: "Ivan", age: 15, isActive: true },
+//   { name: "Artem", age: 14, isActive: false },
+//   { name: "Denis", age: 15, isActive: true },
+//   { name: "Maks", age: 15, isActive: false },
+//   { name: "Artur", age: 14, isActive: true }
+// ];
+
+// const usersIsactive = users.filter(user => !user.isActive);
+
+// console.log(usersIsactive);
+
+// 5 
+// const users = [
+//   { name: "Ivan", age: 15, email: "ivan@gmail.com" },
+//   { name: "Artem", age: 14, email: "artem@gmail.com" },
+//   { name: "Denis", age: 15, email: "denis@gmail.com" },
+//   { name: "Maks", age: 15, email: "maksym@gmail.com" },
+//   { name: "Artur", age: 14, email: "artur@gmail.com" }
+// ];
+
+// const gmail = "artem@gmail.com";
+
+// const userEmail = users.find(user => user.email === gmail);
+
+// console.log(userEmail);
+
+// 6
+const users = [
+  { name: "Ivan", age: 16, email: "ivan@gmail.com" },
+  { name: "Artem", age: 14, email: "artem@gmail.com" },
+  { name: "Denis", age: 15, email: "denis@gmail.com" },
+  { name: "Maks", age: 16, email: "maksym@gmail.com" },
+  { name: "Artur", age: 14, email: "artur@gmail.com" }
 ];
 
-  const [product1, product2, product3] = products;
-  const {name:name1, price:price1, quantity:quantity1} = product1;
-  const {name:name2, price:price2, quantity:quantity2} = product2;
-  const {name:name3, price:price3, quantity:quantity3} = product3;
+const minAge = 15;
+const maxAge = 16;
 
-  console.log(name1, price1, quantity1)
-  console.log(name2, price2, quantity2)
-  console.log(name3, price3, quantity3)
+// Фільтрація користувачів за віковою категорією
+const usersAge = users.filter(user => user.age >= minAge && user.age <= maxAge);
+
+console.log(usersAge);
