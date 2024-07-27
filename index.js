@@ -875,37 +875,258 @@
 //   console.log(name3, price3, quantity3)
 
 // 1
-// const users = [
-//   { name: "Artem", age: 14 },
-//   { name: "Artur", age: 14 },
-//   { name: "Maks", age: 15 }
-// ];
-// const names = users.map(user => user.name);
-// console.log(names);
+// const users = [  
+//   {   
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',    
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],    
+//       isActive: false,
+//       balance: 2811,    
+//       skills: ['ipsum', 'lorem'],
+//       gender: 'male',    
+//       age: 37,
+//     },  
+//   {
+
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//       gender: 'female',
+//       age: 34,
+//     },  
+//   {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//       gender: 'male',
+//       age: 24,
+//     },  
+//   {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       skills: ['adipisicing', 'irure', 'velit'],
+//       gender: 'female',
+//       age: 21,
+//     },  
+//   {
+
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       skills: ['ex', 'culpa', 'nostrud'],
+//       gender: 'male',
+//       age: 27,
+//     },  {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       skills: ['non', 'amet', 'ipsum'],
+//       gender: 'male',
+//       age: 38,
+//     },  
+//   {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       skills: ['lorem', 'veniam', 'culpa'],
+//       gender: 'female',
+//       age: 39,  
+//   },
+//   ];
+// const getUserNames = (users) => users.map(user => user.name);
+
+// console.log(getUserNames(users));
 
 // 2
-// const users = [
-//   { name: "Ivan", age: 15, eyeColor: "blue" },
-//   { name: "Artem", age: 14, eyeColor: "green" },
-//   { name: "Denis", age: 15, eyeColor: "brown" },
-//   { name: "Maks", age: 15, eyeColor: "blue" },
-//   { name: "Artur", age: 14, eyeColor: "green" }
-// ];
-// const EyeColor = "blue";
-// const usersEyeColor = users.filter(user => user.eyeColor === EyeColor);
+// const users = [  
+//   {   
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',    
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],    
+//       isActive: false,
+//       balance: 2811,    
+//       skills: ['ipsum', 'lorem'],
+//       gender: 'male',    
+//       age: 37,
+//     },  
+//   {
 
-// console.log(usersEyeColor);
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//       gender: 'female',
+//       age: 34,
+//     },  
+//   {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//       gender: 'male',
+//       age: 24,
+//     },  
+//   {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       skills: ['adipisicing', 'irure', 'velit'],
+//       gender: 'female',
+//       age: 21,
+//     },  
+//   {
+
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       skills: ['ex', 'culpa', 'nostrud'],
+//       gender: 'male',
+//       age: 27,
+//     },  {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       skills: ['non', 'amet', 'ipsum'],
+//       gender: 'male',
+//       age: 38,
+//     },  
+//   {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       skills: ['lorem', 'veniam', 'culpa'],
+//       gender: 'female',
+//       age: 39,  
+//   },
+//   ];
+//  const EyeColor = "blue";
+//  const usersEyeColor = users.filter(user => user.eyeColor === EyeColor);
+
+//  console.log(usersEyeColor);
 
 // 3
-// const users = [
-//   { name: "Ivan", age: 15, gender: "false" },
-//   { name: "Artem", age: 14, gender: "true" },
-//   { name: "Denis", age: 15, gender: "false" },
-//   { name: "Maks", age: 15, gender: "true" },
-//   { name: "Artur", age: 14, gender: "false" }
-// ];
+// const users = [  
+//   {   
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',    
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],    
+//       isActive: false,
+//       balance: 2811,    
+//       skills: ['ipsum', 'lorem'],
+//       gender: 'male',    
+//       age: 37,
+//     },  
+//   {
 
-// const Gender = "true";
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//       gender: 'female',
+//       age: 34,
+//     },  
+//   {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//       gender: 'male',
+//       age: 24,
+//     },  
+//   {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       skills: ['adipisicing', 'irure', 'velit'],
+//       gender: 'female',
+//       age: 21,
+//     },  
+//   {
+
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       skills: ['ex', 'culpa', 'nostrud'],
+//       gender: 'male',
+//       age: 27,
+//     },  {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       skills: ['non', 'amet', 'ipsum'],
+//       gender: 'male',
+//       age: 38,
+//     },  
+//   {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       skills: ['lorem', 'veniam', 'culpa'],
+//       gender: 'female',
+//       age: 39,  
+//   },
+//   ];
+// const Gender = "female";
 
 // const namesGender = users
 //   .filter(user => user.gender === Gender)
@@ -914,46 +1135,266 @@
 // console.log(namesGender);
 
 // 4
-// const users = [
-//   { name: "Ivan", age: 15, isActive: true },
-//   { name: "Artem", age: 14, isActive: false },
-//   { name: "Denis", age: 15, isActive: true },
-//   { name: "Maks", age: 15, isActive: false },
-//   { name: "Artur", age: 14, isActive: true }
-// ];
+// const users = [  
+//   {   
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',    
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],    
+//       isActive: false,
+//       balance: 2811,    
+//       skills: ['ipsum', 'lorem'],
+//       gender: 'male',    
+//       age: 37,
+//     },  
+//   {
+
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//       gender: 'female',
+//       age: 34,
+//     },  
+//   {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//       gender: 'male',
+//       age: 24,
+//     },  
+//   {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       skills: ['adipisicing', 'irure', 'velit'],
+//       gender: 'female',
+//       age: 21,
+//     },  
+//   {
+
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       skills: ['ex', 'culpa', 'nostrud'],
+//       gender: 'male',
+//       age: 27,
+//     },  {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       skills: ['non', 'amet', 'ipsum'],
+//       gender: 'male',
+//       age: 38,
+//     },  
+//   {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       skills: ['lorem', 'veniam', 'culpa'],
+//       gender: 'female',
+//       age: 39,  
+//   },
+//   ];
 
 // const usersIsactive = users.filter(user => !user.isActive);
 
 // console.log(usersIsactive);
 
 // 5 
-// const users = [
-//   { name: "Ivan", age: 15, email: "ivan@gmail.com" },
-//   { name: "Artem", age: 14, email: "artem@gmail.com" },
-//   { name: "Denis", age: 15, email: "denis@gmail.com" },
-//   { name: "Maks", age: 15, email: "maksym@gmail.com" },
-//   { name: "Artur", age: 14, email: "artur@gmail.com" }
-// ];
+// const users = [  
+//   {   
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',    
+//       eyeColor: 'blue',
+//       friends: ['Sharron Pace'],    
+//       isActive: false,
+//       balance: 2811,    
+//       skills: ['ipsum', 'lorem'],
+//       gender: 'male',    
+//       age: 37,
+//     },  
+//   {
 
-// const gmail = "artem@gmail.com";
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       eyeColor: 'blue',
+//       friends: ['Briana Decker', 'Sharron Pace'],
+//       isActive: true,
+//       balance: 3821,
+//       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//       gender: 'female',
+//       age: 34,
+//     },  
+//   {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       eyeColor: 'green',
+//       friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//       isActive: false,
+//       balance: 3793,
+//       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//       gender: 'male',
+//       age: 24,
+//     },  
+//   {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       eyeColor: 'green',
+//       friends: ['Goldie Gentry', 'Aisha Tran'],
+//       isActive: true,
+//       balance: 2278,
+//       skills: ['adipisicing', 'irure', 'velit'],
+//       gender: 'female',
+//       age: 21,
+//     },  
+//   {
 
-// const userEmail = users.find(user => user.email === gmail);
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       eyeColor: 'blue',
+//       friends: ['Jordan Sampson', 'Eddie Strong'],
+//       isActive: true,
+//       balance: 3951,
+//       skills: ['ex', 'culpa', 'nostrud'],
+//       gender: 'male',
+//       age: 27,
+//     },  {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       eyeColor: 'brown',
+//       friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//       isActive: false,
+//       balance: 1498,
+//       skills: ['non', 'amet', 'ipsum'],
+//       gender: 'male',
+//       age: 38,
+//     },  
+//   {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       eyeColor: 'brown',
+//       friends: ['Goldie Gentry', 'Briana Decker'],
+//       isActive: true,
+//       balance: 2764,
+//       skills: ['lorem', 'veniam', 'culpa'],
+//       gender: 'female',
+//       age: 39,  
+//   },
+//   ];
+
+// const gmail = "blackburndotson@furnigeer.com";
+
+// const userEmail = users.find(users => users.email === gmail);
 
 // console.log(userEmail);
 
-// 6
-const users = [
-  { name: "Ivan", age: 16, email: "ivan@gmail.com" },
-  { name: "Artem", age: 14, email: "artem@gmail.com" },
-  { name: "Denis", age: 15, email: "denis@gmail.com" },
-  { name: "Maks", age: 16, email: "maksym@gmail.com" },
-  { name: "Artur", age: 14, email: "artur@gmail.com" }
-];
+// // 6
+const users = [  
+  {   
+      name: 'Moore Hensley',
+      email: 'moorehensley@indexia.com',    
+      eyeColor: 'blue',
+      friends: ['Sharron Pace'],    
+      isActive: false,
+      balance: 2811,    
+      skills: ['ipsum', 'lorem'],
+      gender: 'male',    
+      age: 37,
+    },  
+  {
 
-const minAge = 15;
-const maxAge = 16;
+      name: 'Sharlene Bush',
+      email: 'sharlenebush@tubesys.com',
+      eyeColor: 'blue',
+      friends: ['Briana Decker', 'Sharron Pace'],
+      isActive: true,
+      balance: 3821,
+      skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+      gender: 'female',
+      age: 34,
+    },  
+  {
+      name: 'Ross Vazquez',
+      email: 'rossvazquez@xinware.com',
+      eyeColor: 'green',
+      friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+      isActive: false,
+      balance: 3793,
+      skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+      gender: 'male',
+      age: 24,
+    },  
+  {
+      name: 'Elma Head',
+      email: 'elmahead@omatom.com',
+      eyeColor: 'green',
+      friends: ['Goldie Gentry', 'Aisha Tran'],
+      isActive: true,
+      balance: 2278,
+      skills: ['adipisicing', 'irure', 'velit'],
+      gender: 'female',
+      age: 21,
+    },  
+  {
 
-// Фільтрація користувачів за віковою категорією
-const usersAge = users.filter(user => user.age >= minAge && user.age <= maxAge);
+      name: 'Carey Barr',
+      email: 'careybarr@nurali.com',
+      eyeColor: 'blue',
+      friends: ['Jordan Sampson', 'Eddie Strong'],
+      isActive: true,
+      balance: 3951,
+      skills: ['ex', 'culpa', 'nostrud'],
+      gender: 'male',
+      age: 27,
+    },  {
+      name: 'Blackburn Dotson',
+      email: 'blackburndotson@furnigeer.com',
+      eyeColor: 'brown',
+      friends: ['Jacklyn Lucas', 'Linda Chapman'],
+      isActive: false,
+      balance: 1498,
+      skills: ['non', 'amet', 'ipsum'],
+      gender: 'male',
+      age: 38,
+    },  
+  {
+      name: 'Sheree Anthony',
+      email: 'shereeanthony@kog.com',
+      eyeColor: 'brown',
+      friends: ['Goldie Gentry', 'Briana Decker'],
+      isActive: true,
+      balance: 2764,
+      skills: ['lorem', 'veniam', 'culpa'],
+      gender: 'female',
+      age: 39,  
+  },
+  ];
 
-console.log(usersAge);
+const minAge = 27;
+const maxAge = 39;
+
+const usersAge = (users, minAge, maxAge) => {
+  return users.filter(user => user.age >= minAge && user.age <= maxAge);
+};
+const usersInAge = usersAge(users, 27, 39);
+console.log(usersInAge);
