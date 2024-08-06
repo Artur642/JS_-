@@ -1460,23 +1460,84 @@
 // console.log(getNamesSortedByFriendsCount(users));
 
 // 4
-const getSortedUniqueSkills = (users) => {
-  const skillSet = new Set();
+// const getSortedUniqueSkills = (users) => {
+//   const skillSet = new Set();
 
-  users.forEach(user => {
-    user.skills.forEach(skill => skillSet.add(skill));
-  });
+//   users.forEach(user => {
+//     user.skills.forEach(skill => skillSet.add(skill));
+//   });
 
-  return Array.from(skillSet).sort();
-};
+//   return Array.from(skillSet).sort();
+// };
 
-const users = [
-  { name: 'Moore Hensley', skills: ['elit', 'lore', 'ipsum'] },
-  { name: 'Sharlene Bush', skills: ['anim', 'irure', 'ex'] },
-  { name: 'Elma Head', skills: ['irure', 'adipisicing', 'laborum'] },
-  { name: 'Carey Barr', skills: ['ex', 'lore', 'culpa'] },
-  { name: 'Blackburn Dotson', skills: ['elit', 'commodo', 'laborum'] },
-  { name: 'Sheree Anthony', skills: ['commodo', 'amet', 'anim'] },
-];
+// const users = [
+//   { name: 'Moore Hensley', skills: ['elit', 'lore', 'ipsum'] },
+//   { name: 'Sharlene Bush', skills: ['anim', 'irure', 'ex'] },
+//   { name: 'Elma Head', skills: ['irure', 'adipisicing', 'laborum'] },
+//   { name: 'Carey Barr', skills: ['ex', 'lore', 'culpa'] },
+//   { name: 'Blackburn Dotson', skills: ['elit', 'commodo', 'laborum'] },
+//   { name: 'Sheree Anthony', skills: ['commodo', 'amet', 'anim'] },
+// ];
 
-console.log(getSortedUniqueSkills(users));
+// console.log(getSortedUniqueSkills(users));
+
+
+// домашня робота 16
+
+// 1
+// function Account({ login, email }) {
+//   this.login = login;
+//   this.email = email;
+// }
+
+// Account.prototype.getInfo = function () {
+//   console.log(`Login: ${this.login}, Email: ${this.email}`);
+// };
+
+// console.log(Account.prototype.getInfo); // function
+
+// const mango = new Account({
+//   login: 'Mangozedog',
+//   email: 'mango@dog.woof',
+// });
+
+// mango.getInfo(); // Login: Mangozedog, Email: mango@dog.woof
+
+// const poly = new Account({
+//   login: 'Poly',
+//   email: 'poly@mail.com',
+// });
+
+// poly.getInfo(); // Login: Poly, Email: poly@mail.com
+
+// 2
+class User {
+  constructor({ name, age, followers }) {
+    this.name = name;
+    this.age = age;
+    this.followers = followers;
+  }
+
+  getInfo() {
+    console.log(
+      `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
+    );
+  }
+}
+
+const mango = new User({
+  name: 'Mango',
+  age: 2,
+  followers: 20,
+});
+
+mango.getInfo(); // User Mango is 2 years old and has 20 followers
+
+// Створення об'єкта poly
+const poly = new User({
+  name: 'Poly',
+  age: 3,
+  followers: 17,
+});
+
+poly.getInfo(); // User Poly is 3 years old and has 17 followers
