@@ -122,7 +122,7 @@
 
 // 3
 // for(let i = 1; i <= 10; i++){
-//     let result = 7 * i; 
+//     let result = 7 * i;
 //     console.log(`7 * ${i} = ${result}`)
 // }
 
@@ -170,7 +170,7 @@
 //         inputDay === "вівторок" ||
 //         inputDay === "середа" ||
 //         inputDay === "четаверт" ||
-//         inputDay === "п'ятниця" 
+//         inputDay === "п'ятниця"
 //     ) {
 //         alert("Зараз будні дні")
 //     } else if (inputDay === "субота" || inputDay === "неділя") {
@@ -802,7 +802,7 @@
 //    * Якщо amount більше, ніж поточний баланс, виводь повідомлення
 //    * про те, що зняття такої суми не можливо, недостатньо коштів.
 //    */
-//   withdraw(amount) { 
+//   withdraw(amount) {
 //     if(amount > this.balance) {
 //       console.log("Зняття такої суми неможливе, недостатньо коштів");
 //       return;
@@ -815,14 +815,14 @@
 //   /*
 //    * Метод повертає поточний баланс
 //    */
-//   getBalance() { 
+//   getBalance() {
 //     return this.balance;
 //   },
 
 //   /*
 //    * Метод шукає і повертає об'єкт транзакції по id
 //    */
-//   getTransactionDetails(id) { 
+//   getTransactionDetails(id) {
 //     return this.transactions.find(transaction => transaction.id === id)
 //   },
 
@@ -830,7 +830,7 @@
 //    * Метод повертає кількість коштів
 //    * певного типу транзакції з усієї історії транзакцій
 //    */
-//   getTransactionTotal(type) { 
+//   getTransactionTotal(type) {
 //     return this.transactions
 //       .filter(transaction => transaction.type === type)
 //       .reduce((total, transaction) => total + transaction.amount, 0);
@@ -875,18 +875,18 @@
 //   console.log(name3, price3, quantity3)
 
 // 1
-// const users = [  
-//   {   
+// const users = [
+//   {
 //       name: 'Moore Hensley',
-//       email: 'moorehensley@indexia.com',    
+//       email: 'moorehensley@indexia.com',
 //       eyeColor: 'blue',
-//       friends: ['Sharron Pace'],    
+//       friends: ['Sharron Pace'],
 //       isActive: false,
-//       balance: 2811,    
+//       balance: 2811,
 //       skills: ['ipsum', 'lorem'],
-//       gender: 'male',    
+//       gender: 'male',
 //       age: 37,
-//     },  
+//     },
 //   {
 
 //       name: 'Sharlene Bush',
@@ -898,7 +898,7 @@
 //       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
 //       gender: 'female',
 //       age: 34,
-//     },  
+//     },
 //   {
 //       name: 'Ross Vazquez',
 //       email: 'rossvazquez@xinware.com',
@@ -909,7 +909,7 @@
 //       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
 //       gender: 'male',
 //       age: 24,
-//     },  
+//     },
 //   {
 //       name: 'Elma Head',
 //       email: 'elmahead@omatom.com',
@@ -920,7 +920,7 @@
 //       skills: ['adipisicing', 'irure', 'velit'],
 //       gender: 'female',
 //       age: 21,
-//     },  
+//     },
 //   {
 
 //       name: 'Carey Barr',
@@ -942,7 +942,7 @@
 //       skills: ['non', 'amet', 'ipsum'],
 //       gender: 'male',
 //       age: 38,
-//     },  
+//     },
 //   {
 //       name: 'Sheree Anthony',
 //       email: 'shereeanthony@kog.com',
@@ -952,7 +952,7 @@
 //       balance: 2764,
 //       skills: ['lorem', 'veniam', 'culpa'],
 //       gender: 'female',
-//       age: 39,  
+//       age: 39,
 //   },
 //   ];
 // const getUserNames = (users) => users.map(user => user.name);
@@ -960,18 +960,18 @@
 // console.log(getUserNames(users));
 
 // 2
-// const users = [  
-//   {   
+// const users = [
+//   {
 //       name: 'Moore Hensley',
-//       email: 'moorehensley@indexia.com',    
+//       email: 'moorehensley@indexia.com',
 //       eyeColor: 'blue',
-//       friends: ['Sharron Pace'],    
+//       friends: ['Sharron Pace'],
 //       isActive: false,
-//       balance: 2811,    
+//       balance: 2811,
 //       skills: ['ipsum', 'lorem'],
-//       gender: 'male',    
+//       gender: 'male',
 //       age: 37,
-//     },  
+//     },
 //   {
 
 //       name: 'Sharlene Bush',
@@ -983,7 +983,7 @@
 //       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
 //       gender: 'female',
 //       age: 34,
-//     },  
+//     },
 //   {
 //       name: 'Ross Vazquez',
 //       email: 'rossvazquez@xinware.com',
@@ -994,7 +994,7 @@
 //       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
 //       gender: 'male',
 //       age: 24,
-//     },  
+//     },
 //   {
 //       name: 'Elma Head',
 //       email: 'elmahead@omatom.com',
@@ -1005,7 +1005,7 @@
 //       skills: ['adipisicing', 'irure', 'velit'],
 //       gender: 'female',
 //       age: 21,
-//     },  
+//     },
 //   {
 
 //       name: 'Carey Barr',
@@ -1027,7 +1027,7 @@
 //       skills: ['non', 'amet', 'ipsum'],
 //       gender: 'male',
 //       age: 38,
-//     },  
+//     },
 //   {
 //       name: 'Sheree Anthony',
 //       email: 'shereeanthony@kog.com',
@@ -1037,7 +1037,7 @@
 //       balance: 2764,
 //       skills: ['lorem', 'veniam', 'culpa'],
 //       gender: 'female',
-//       age: 39,  
+//       age: 39,
 //   },
 //   ];
 //  const EyeColor = "blue";
@@ -1046,18 +1046,18 @@
 //  console.log(usersEyeColor);
 
 // 3
-// const users = [  
-//   {   
+// const users = [
+//   {
 //       name: 'Moore Hensley',
-//       email: 'moorehensley@indexia.com',    
+//       email: 'moorehensley@indexia.com',
 //       eyeColor: 'blue',
-//       friends: ['Sharron Pace'],    
+//       friends: ['Sharron Pace'],
 //       isActive: false,
-//       balance: 2811,    
+//       balance: 2811,
 //       skills: ['ipsum', 'lorem'],
-//       gender: 'male',    
+//       gender: 'male',
 //       age: 37,
-//     },  
+//     },
 //   {
 
 //       name: 'Sharlene Bush',
@@ -1069,7 +1069,7 @@
 //       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
 //       gender: 'female',
 //       age: 34,
-//     },  
+//     },
 //   {
 //       name: 'Ross Vazquez',
 //       email: 'rossvazquez@xinware.com',
@@ -1080,7 +1080,7 @@
 //       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
 //       gender: 'male',
 //       age: 24,
-//     },  
+//     },
 //   {
 //       name: 'Elma Head',
 //       email: 'elmahead@omatom.com',
@@ -1091,7 +1091,7 @@
 //       skills: ['adipisicing', 'irure', 'velit'],
 //       gender: 'female',
 //       age: 21,
-//     },  
+//     },
 //   {
 
 //       name: 'Carey Barr',
@@ -1113,7 +1113,7 @@
 //       skills: ['non', 'amet', 'ipsum'],
 //       gender: 'male',
 //       age: 38,
-//     },  
+//     },
 //   {
 //       name: 'Sheree Anthony',
 //       email: 'shereeanthony@kog.com',
@@ -1123,7 +1123,7 @@
 //       balance: 2764,
 //       skills: ['lorem', 'veniam', 'culpa'],
 //       gender: 'female',
-//       age: 39,  
+//       age: 39,
 //   },
 //   ];
 // const Gender = "female";
@@ -1135,18 +1135,18 @@
 // console.log(namesGender);
 
 // 4
-// const users = [  
-//   {   
+// const users = [
+//   {
 //       name: 'Moore Hensley',
-//       email: 'moorehensley@indexia.com',    
+//       email: 'moorehensley@indexia.com',
 //       eyeColor: 'blue',
-//       friends: ['Sharron Pace'],    
+//       friends: ['Sharron Pace'],
 //       isActive: false,
-//       balance: 2811,    
+//       balance: 2811,
 //       skills: ['ipsum', 'lorem'],
-//       gender: 'male',    
+//       gender: 'male',
 //       age: 37,
-//     },  
+//     },
 //   {
 
 //       name: 'Sharlene Bush',
@@ -1158,7 +1158,7 @@
 //       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
 //       gender: 'female',
 //       age: 34,
-//     },  
+//     },
 //   {
 //       name: 'Ross Vazquez',
 //       email: 'rossvazquez@xinware.com',
@@ -1169,7 +1169,7 @@
 //       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
 //       gender: 'male',
 //       age: 24,
-//     },  
+//     },
 //   {
 //       name: 'Elma Head',
 //       email: 'elmahead@omatom.com',
@@ -1180,7 +1180,7 @@
 //       skills: ['adipisicing', 'irure', 'velit'],
 //       gender: 'female',
 //       age: 21,
-//     },  
+//     },
 //   {
 
 //       name: 'Carey Barr',
@@ -1202,7 +1202,7 @@
 //       skills: ['non', 'amet', 'ipsum'],
 //       gender: 'male',
 //       age: 38,
-//     },  
+//     },
 //   {
 //       name: 'Sheree Anthony',
 //       email: 'shereeanthony@kog.com',
@@ -1212,7 +1212,7 @@
 //       balance: 2764,
 //       skills: ['lorem', 'veniam', 'culpa'],
 //       gender: 'female',
-//       age: 39,  
+//       age: 39,
 //   },
 //   ];
 
@@ -1220,19 +1220,19 @@
 
 // console.log(usersIsactive);
 
-// 5 
-// const users = [  
-//   {   
+// 5
+// const users = [
+//   {
 //       name: 'Moore Hensley',
-//       email: 'moorehensley@indexia.com',    
+//       email: 'moorehensley@indexia.com',
 //       eyeColor: 'blue',
-//       friends: ['Sharron Pace'],    
+//       friends: ['Sharron Pace'],
 //       isActive: false,
-//       balance: 2811,    
+//       balance: 2811,
 //       skills: ['ipsum', 'lorem'],
-//       gender: 'male',    
+//       gender: 'male',
 //       age: 37,
-//     },  
+//     },
 //   {
 
 //       name: 'Sharlene Bush',
@@ -1244,7 +1244,7 @@
 //       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
 //       gender: 'female',
 //       age: 34,
-//     },  
+//     },
 //   {
 //       name: 'Ross Vazquez',
 //       email: 'rossvazquez@xinware.com',
@@ -1255,7 +1255,7 @@
 //       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
 //       gender: 'male',
 //       age: 24,
-//     },  
+//     },
 //   {
 //       name: 'Elma Head',
 //       email: 'elmahead@omatom.com',
@@ -1266,7 +1266,7 @@
 //       skills: ['adipisicing', 'irure', 'velit'],
 //       gender: 'female',
 //       age: 21,
-//     },  
+//     },
 //   {
 
 //       name: 'Carey Barr',
@@ -1288,7 +1288,7 @@
 //       skills: ['non', 'amet', 'ipsum'],
 //       gender: 'male',
 //       age: 38,
-//     },  
+//     },
 //   {
 //       name: 'Sheree Anthony',
 //       email: 'shereeanthony@kog.com',
@@ -1298,7 +1298,7 @@
 //       balance: 2764,
 //       skills: ['lorem', 'veniam', 'culpa'],
 //       gender: 'female',
-//       age: 39,  
+//       age: 39,
 //   },
 //   ];
 
@@ -1309,18 +1309,18 @@
 // console.log(userEmail);
 
 // // 6
-// const users = [  
-//   {   
+// const users = [
+//   {
 //       name: 'Moore Hensley',
-//       email: 'moorehensley@indexia.com',    
+//       email: 'moorehensley@indexia.com',
 //       eyeColor: 'blue',
-//       friends: ['Sharron Pace'],    
+//       friends: ['Sharron Pace'],
 //       isActive: false,
-//       balance: 2811,    
+//       balance: 2811,
 //       skills: ['ipsum', 'lorem'],
-//       gender: 'male',    
+//       gender: 'male',
 //       age: 37,
-//     },  
+//     },
 //   {
 
 //       name: 'Sharlene Bush',
@@ -1332,7 +1332,7 @@
 //       skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
 //       gender: 'female',
 //       age: 34,
-//     },  
+//     },
 //   {
 //       name: 'Ross Vazquez',
 //       email: 'rossvazquez@xinware.com',
@@ -1343,7 +1343,7 @@
 //       skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
 //       gender: 'male',
 //       age: 24,
-//     },  
+//     },
 //   {
 //       name: 'Elma Head',
 //       email: 'elmahead@omatom.com',
@@ -1354,7 +1354,7 @@
 //       skills: ['adipisicing', 'irure', 'velit'],
 //       gender: 'female',
 //       age: 21,
-//     },  
+//     },
 //   {
 
 //       name: 'Carey Barr',
@@ -1376,7 +1376,7 @@
 //       skills: ['non', 'amet', 'ipsum'],
 //       gender: 'male',
 //       age: 38,
-//     },  
+//     },
 //   {
 //       name: 'Sheree Anthony',
 //       email: 'shereeanthony@kog.com',
@@ -1386,7 +1386,7 @@
 //       balance: 2764,
 //       skills: ['lorem', 'veniam', 'culpa'],
 //       gender: 'female',
-//       age: 39,  
+//       age: 39,
 //   },
 //   ];
 
@@ -1438,8 +1438,8 @@
 //   }
 // ];
 
-// console.log(getUsersWithFriend(users, 'Briana Decker')); 
-// console.log(getUsersWithFriend(users, 'Goldie Gentry')); 
+// console.log(getUsersWithFriend(users, 'Briana Decker'));
+// console.log(getUsersWithFriend(users, 'Goldie Gentry'));
 
 // 3
 // const getNamesSortedByFriendsCount = (users) => {
@@ -1511,33 +1511,57 @@
 // poly.getInfo(); // Login: Poly, Email: poly@mail.com
 
 // 2
-class User {
-  constructor({ name, age, followers }) {
-    this.name = name;
-    this.age = age;
-    this.followers = followers;
-  }
+// class User {
+//   constructor({ name, age, followers }) {
+//     this.name = name;
+//     this.age = age;
+//     this.followers = followers;
+//   }
 
-  getInfo() {
-    console.log(
-      `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
-    );
-  }
-}
+//   getInfo() {
+//     console.log(
+//       `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
+//     );
+//   }
+// }
 
-const mango = new User({
-  name: 'Mango',
-  age: 2,
-  followers: 20,
-});
+// const mango = new User({
+//   name: 'Mango',
+//   age: 2,
+//   followers: 20,
+// });
 
-mango.getInfo(); // User Mango is 2 years old and has 20 followers
+// mango.getInfo(); // User Mango is 2 years old and has 20 followers
 
-// Створення об'єкта poly
-const poly = new User({
-  name: 'Poly',
-  age: 3,
-  followers: 17,
-});
+// // Створення об'єкта poly
+// const poly = new User({
+//   name: 'Poly',
+//   age: 3,
+//   followers: 17,
+// });
 
-poly.getInfo(); // User Poly is 3 years old and has 17 followers
+// poly.getInfo(); // User Poly is 3 years old and has 17 followers
+
+// 17 and 18
+
+// task 1
+// const button = document.getElementById('buttonTask1');
+// const textInput = document.getElementById('inputTextTask1');
+
+// button.addEventListener('click', () => {
+//     button.textContent = inputTextTask1.value;
+// });
+
+// task 2
+// const imgAnimal = document.getElementById ('imageAnimals');
+// imgAnimal.src = 'dog.jpg';
+// const link = document.getElementById ('linkId');
+// const img = document.getElementById ('imgLink');
+
+// task 3
+// link.href = 'https://uk.wikipedia.org/wiki/JavaScript';
+// img.src = 'cat.jpg';
+
+// task 4
+const listElement = document.getElementById('numberOne');
+listElement.textContent = 'Scss'
