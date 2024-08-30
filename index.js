@@ -1599,27 +1599,62 @@
 // });
 // ingredientsList.append(...items);
 // task 3
-const images = [
-    {
-     url:
-      'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-     alt: 'White and Black Long Fur Cat',
-    },
-    {
-     url:
-      'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-     alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
-    },
-    {
-     url:
-      'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-     alt: 'Group of Horses Running',
-    },
-   ];
-   const gallery = document.getElementById('gallery');
+// const images = [
+//     {
+//      url:
+//       'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+//      alt: 'White and Black Long Fur Cat',
+//     },
+//     {
+//      url:
+//       'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+//      alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+//     },
+//     {
+//      url:
+//       'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+//      alt: 'Group of Horses Running',
+//     },
+//    ];
+//    const gallery = document.getElementById('gallery');
 
-   const galleryItems = images.map(image => 
-       `<li><img src="${image.url}" alt="${image.alt}"></li>`
-   ).join('');
+//    const galleryItems = images.map(image => 
+//        `<li><img src="${image.url}" alt="${image.alt}"></li>`
+//    ).join('');
 
-   gallery.insertAdjacentHTML('beforeend', galleryItems);
+//    gallery.insertAdjacentHTML('beforeend', galleryItems);
+
+// task 1-2
+// const openModalBtn = document.querySelector('[data-action="open-modal"]');
+// const closeModalBtn = document.querySelector('[data-action="close-modal"]');
+// const backdrop = document.querySelector('.js-backdrop');
+
+// const openModal = () => {
+//     document.body.classList.add('show-modal');
+// };
+// const closeModal = () => {
+//     document.body.classList.remove('show-modal');
+// };
+
+// openModalBtn.addEventListener('click', openModal);
+// closeModalBtn.addEventListener('click', closeModal);
+// backdrop.addEventListener('click', (event) => {
+
+//     if (event.target === backdrop) {
+//         closeModal();
+//     }
+// });
+
+// task 3
+const radioButtons = document.querySelectorAll('input[name="color"]');
+
+        const changeBackgroundColor = (event) => {
+            const selectedColor = event.target.value;
+            document.body.style.backgroundColor = selectedColor;
+        };
+
+        radioButtons.forEach((radio) => {
+            radio.addEventListener('change', changeBackgroundColor);
+        });
+
+        document.body.style.backgroundColor = document.querySelector('input[name="color"]:checked').value;
