@@ -1646,15 +1646,93 @@
 // });
 
 // task 3
-const radioButtons = document.querySelectorAll('input[name="color"]');
+// const radioButtons = document.querySelectorAll('input[name="color"]');
 
-        const changeBackgroundColor = (event) => {
-            const selectedColor = event.target.value;
-            document.body.style.backgroundColor = selectedColor;
-        };
+//         const changeBackgroundColor = (event) => {
+//             const selectedColor = event.target.value;
+//             document.body.style.backgroundColor = selectedColor;
+//         };
 
-        radioButtons.forEach((radio) => {
-            radio.addEventListener('change', changeBackgroundColor);
-        });
+//         radioButtons.forEach((radio) => {
+//             radio.addEventListener('change', changeBackgroundColor);
+//         });
 
-        document.body.style.backgroundColor = document.querySelector('input[name="color"]:checked').value;
+//         document.body.style.backgroundColor = document.querySelector('input[name="color"]:checked').value;
+
+// task 20
+// const images = document.querySelectorAll('.image');
+// const fullImageContainer = document.querySelector('.full-image-container');
+// const fullImage = document.querySelector('.full-image');
+// let currentImageIndex = 0;
+
+// images.forEach((image, index) => {
+//   image.addEventListener('click', () => {
+//     fullImage.src = image.src;
+//     fullImageContainer.style.display = 'block';
+//     currentImageIndex = index;
+//   });
+// });
+
+// fullImageContainer.addEventListener('click', (e) => {
+//   if (e.target !== fullImage) {
+//     fullImageContainer.style.display = 'none';
+//   }
+// });
+
+// document.addEventListener('keydown', (e) => {
+//   if (fullImageContainer.style.display === 'block') {
+//     if (e.key === 'ArrowRight') {
+//       currentImageIndex = (currentImageIndex + 1) % images.length;
+//     } else if (e.key === 'ArrowLeft') {
+//       currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+//     }
+//     fullImage.src = images[currentImageIndex].src;
+//   }
+// });
+
+// task 2
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.querySelector('#amount');
+    const renderBtn = document.querySelector('button[data-action="render"]');
+    const destroyBtn = document.querySelector('button[data-action="destroy"]');
+    const boxesContainer = document.querySelector('#boxes');
+  
+    function getRandomRgbColor() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+  
+    // Функція для створення колекції div
+    function createBoxes(amount) {
+      const boxes = [];
+      let size = 30; // Початковий розмір
+  
+      for (let i = 0; i < amount; i++) {
+        const div = document.createElement('div');
+        div.style.width = `${size}px`;
+        div.style.height = `${size}px`;
+        div.style.backgroundColor = getRandomRgbColor();
+        div.textContent = `${size} x ${size}`;
+  
+        boxes.push(div);
+        size += 10;
+      }
+  
+      boxesContainer.append(...boxes);
+    }
+  
+    function destroyBoxes() {
+      boxesContainer.innerHTML = '';
+    }
+  
+    renderBtn.addEventListener('click', () => {
+      const amount = Number(input.value);
+      if (amount > 0 && amount <= 100) {
+        createBoxes(amount);
+      }
+    });
+  
+    destroyBtn.addEventListener('click', destroyBoxes);
+  });
